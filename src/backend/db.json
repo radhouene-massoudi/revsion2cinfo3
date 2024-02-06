@@ -1,0 +1,32 @@
+{
+  "departement": [
+    {
+      "matricule": "Unde aut numquam nem",
+      "domaine": "info",
+      "nb_employer": 11,
+      "max_salaire": 500,
+      "id": 1
+    },
+    {
+      "matricule": "Commodo velit impedi",
+      "domaine": "Nemo consequat Sapi",
+      "nb_employer": 31,
+      "max_salaire": 32,
+      "id": 2
+    },
+    {
+      "matricule": "Vel soluta et ipsam ",
+      "domaine": "Inventore voluptatem",
+      "nb_employer": 92,
+      "max_salaire": 26,
+      "id": 3
+    },
+    {
+      "matricule": "esprit",
+      "domaine": "Nihil asperiores qui",
+      "nb_employer": 19,
+      "max_salaire": 500,
+      "id": 4
+    }
+  ]
+}

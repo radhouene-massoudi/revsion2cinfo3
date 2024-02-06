@@ -1,0 +1,16 @@
+<p>listdep works!</p>
+<!--
+<input type="submit" value="show info" (click)="showInfo()">-->
+<input type="number" [(ngModel)]="search">
+<div *ngFor="let d of dep">
+    <div *ngIf="d.max_salaire<search ||search==0">
+{{d.id}}
+{{d.matricule}}
+{{d.domaine}}
+{{d.max_salaire}}
+{{d.nb_employer}}
+<a routerLink="/update/{{d.id}}">affecter</a>
+</div>
+</div>
+<input type="submit" value="nb employer" (click)="nbEmployer()">
+{{nb}}

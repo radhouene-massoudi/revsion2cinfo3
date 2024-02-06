@@ -1,0 +1,22 @@
+<form [formGroup]="fg">
+    <label>marticule</label>
+    <input type="text" formControlName="matricule"><br/>
+    <div *ngIf="fg.get('matricule')?.invalid">
+        <div *ngIf="fg.get('matricule')?.errors?.['minlength']">
+            minlength
+        </div>
+        <div *ngIf="fg.get('matricule')?.errors?.['pattern']">
+            pattern
+        </div>
+    </div>
+    <label>domaine</label>
+    <input type="text" formControlName="domaine" ><br/>
+    <div *ngIf="fg.get('domaine')?.value!='info'&& fg.get('domaine')?.value!='f' && fg.get('domaine')?.value!='rh' ">
+        domaine soit rh  info ou 
+    </div>
+    <label>max salaire</label>
+    <input type="number" formControlName="max_salaire"><br/>
+    <label>nb employe</label>
+    <input type="number" formControlName="nb_employer"><br/>
+    <input type="submit" value="save" (click)="save()"><br/>
+    </form>
